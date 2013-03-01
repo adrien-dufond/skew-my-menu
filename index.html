@@ -1,0 +1,106 @@
+
+<!doctype html>
+<!--[if lte IE 6]> <html class="no-js ie6 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/transitions.js"></script>
+	<script src="js/hotkeys.js"></script>
+	<script src="js/skewBlock.js"></script>
+	<style>
+		/* apply a natural box layout model to all elements */
+		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		a:visited {
+			color: #fff;
+		}
+		#sk {
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			position: absolute;
+			z-index: 20;
+
+			-webkit-box-shadow:  0px 0px 20px 0px #333;
+	        box-shadow:  0px 0px 15px 0px #333;
+
+			background: rgb(14,50,102); /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBlMzI2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTcyYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  rgba(14,50,102,1) 0%, rgba(69,114,178,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(14,50,102,1)), color-stop(100%,rgba(69,114,178,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(14,50,102,1) 0%,rgba(69,114,178,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(14,50,102,1) 0%,rgba(69,114,178,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(14,50,102,1) 0%,rgba(69,114,178,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(14,50,102,1) 0%,rgba(69,114,178,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3266', endColorstr='#4572b2',GradientType=0 ); /* IE6-8 */
+		}
+		.line {
+			font-size: 13px;
+			overflow: hidden;
+			position: absolute;
+			width: 100%;
+		}
+		.line h2 {
+			display: inline;
+			font-size: 20px;
+			margin: 0;
+			padding: 0;
+		}
+		.line a:hover {
+			border-bottom: 5px solid #fff;
+		}
+		.line a {
+			color: #fff;
+			text-decoration: none;
+		}
+		#sk_openclose {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#sk_openclose span {
+			background-color: white;
+			border-radius: 50%;
+			color: #0e3266;
+			display: inline-block;
+			font-size: 22px;
+			font-weight: bold;
+			height: 20px;
+			line-height: 18px;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+			width: 20px;
+			z-index: 21;
+		}
+	</style>
+</head>
+<body>	
+	<div id="sk">
+		<div class="line"></div>
+		<div class="line" id="sk_nav">
+			<div id="sk_openclose"><span>&#8250;</span></div>
+		</div>
+		<div class="line"><a href="#"><h2>News</h2> - What's up doc ?</a></div>
+		<div class="line"><a href="#"><h2>About us</h2> - What, when, where, why</a></div>
+		<div class="line"><a href="#"><h2>Clients</h2> - Why we do our best</a></div>
+		<div class="line"><a href="#"><h2>Portfolio</h2> - Browse our realisations</a></div>
+	</div>
+	<script type="text/javascript" >
+		$('#sk').skewBlock('init', 300, 30, 0, 25); //line_width, line_height, line_padding(>=30), skew
+	</script>
+</body>
+</html>
