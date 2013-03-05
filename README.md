@@ -35,4 +35,9 @@ Set the html...
 ...And apply skewBlock.js to the #sk div :
 
      // Arguments are : line width, line height, line padding, skew angle
-     $('#sk').skewBlock('init', 300, 30, 0, 25); 
+     $('#sk').skewBlock('init', 300, 30, 0, 25);
+
+Demo
+----
+
+<http://bquarante.github.com/skew-my-menu>
